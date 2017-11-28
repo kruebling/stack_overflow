@@ -6,7 +6,7 @@
     <div class="card">
       <div class="card-block">
         <%= post.title %>
-        <%= post.body %>
+        <%= link_to post.title, post_path(post) %>
       </div>
     </div>
   </div>

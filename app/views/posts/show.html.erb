@@ -1,0 +1,32 @@
+<h1>Title: <%= @post.title %></h1>
+<h5>By: <%= @post.user_id %></h5>
+<h1>Question: <%= @post.body %></h1>
+<% if current_user %>
+  <%= link_to like_post_path(@post), method: :put do %>
+    Upvote
+    <%= @post.get_upvotes.size %>
+  <% end %>
+  <%= link_to dislike_post_path(@post), method: :put do %>
+    Downvote
+    <%= @post.get_downvotes.size %>
+  <% end %>
+<% end %>
+<hr>
+
+<h3>Answers</h3>
+<div class="row">
+  <% @answers.each do |answer| %>
+  <div class="col sm-4">
+    <div class="card">
+      <div class="card-block">
+        <h3>Answer: <%= answer.body %></h3>
+        <h3>user: <%= answer.user_id %></h3>
+        <% answer.comments.each do |comment| %>
+          <p>Comment: <%= comment.body %></p>
+          <p>Comment: <%= comment.user_id %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
