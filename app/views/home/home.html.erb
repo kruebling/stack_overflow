@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+<h3>Newest posts</h3>
+<div class="row">
+  <% @posts.each do |post| %>
+  <div class="col sm-4">
+    <div class="card">
+      <div class="card-block">
+        <%= post.title %>
+        <%= post.body %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

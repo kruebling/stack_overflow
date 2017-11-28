@@ -37,6 +37,8 @@ gem 'devise', '~> 4.3'
 # Add gem for voting
 gem 'acts_as_votable', '~> 0.11.1'
 
+# add faker gem
+gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -47,6 +49,9 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do
