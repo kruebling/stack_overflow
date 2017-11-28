@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/stack_overflow/spec/controllers/home_controller_spec.rb": [
+      "/Users/Guest/Desktop/stack_overflow/spec/controllers/answer_controller_spec.rb": [
         1,
         null,
         1,
@@ -557,6 +557,8 @@
         null,
         1,
         null,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/stack_overflow/app/models/user.rb": [
@@ -612,7 +614,23 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/stack_overflow/app/helpers/answer_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/helpers/comment_helper.rb": [
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/stack_overflow/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/helpers/post_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/helpers/user_helper.rb": [
         1,
         null
       ],
@@ -628,11 +646,86 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/stack_overflow/app/controllers/answers_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/controllers/comments_controller.rb": [
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/stack_overflow/app/controllers/home_controller.rb": [
         1,
         1,
         0,
         null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/controllers/posts_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/app/controllers/user_controller.rb": [
+        1,
         null
       ],
       "/Users/Guest/Desktop/stack_overflow/app/jobs/application_job.rb": [
@@ -701,8 +794,104 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/stack_overflow/spec/controllers/comment_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/controllers/home_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/controllers/post_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/controllers/user_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/helpers/answer_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/helpers/comment_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/stack_overflow/spec/helpers/home_helper_spec.rb": [
         1
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/helpers/post_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/stack_overflow/spec/helpers/user_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
       ],
       "/Users/Guest/Desktop/stack_overflow/spec/models/answer_spec.rb": [
         1,
@@ -775,6 +964,6 @@
         null
       ]
     },
-    "timestamp": 1511905642
+    "timestamp": 1511909829
   }
 }
