@@ -5,12 +5,14 @@
     <div class="col sm-4">
       <div class="card">
         <div class="card-block">
-          <!-- Ask Franz -->
-          <%= post.title %>
-          <%= link_to post.title, post_path(post) %>
-          <%= if post.user_id == current_user.id do %>
-        <h1>TEST</h1>
-        <% end %>
+        <%= post.title %>
+        <%= link_to post.title, post_path(post) %>
+        <% if post.user_id == current_user.id %>
+          <p><%= link_to "Edit", edit_post_path(post) %></p>
+          <p><%= link_to "Delete", post_path(post),
+            :data => {:confirm => "You sure?",
+            :method => "delete"} %>
+          </p>
         <% end %>
         </div>
       </div>
