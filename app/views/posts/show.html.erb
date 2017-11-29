@@ -19,7 +19,7 @@
   <div class="col sm-4">
     <div class="card card-block">
       <h3>Answer: <%= answer.body %></h3>
-      <h3>user: <%= answer.user_id %></h3>
+      <h3>user: <%= (User.find(answer.user_id)).username %></h3>
       <% answer.comments.each do |comment| %>
         <p>Comment: <%= comment.body %></p>
         <p>Comment: <%= comment.user_id %></p>

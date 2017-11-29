@@ -5,23 +5,6 @@ class PostsController < ApplicationController
     @post = @user.posts.new
   end
 
-  # def new
-  #   binding.pry
-  #   @user =
-  #   @review = @post.reviews.new
-  # end
-  #
-  # def create
-  #   @post = Product.find(params[:post_id])
-  #   @review = @post.reviews.new(review_params)
-  #   if @review.save
-  #     flash[:notice] = "Review successfully added!"
-  #     redirect_to post_path(@review.post)
-  #   else
-  #     render :new
-  #   end
-  # end
-
   def create
     @post = Post.new(post_params)
     if @post.save
