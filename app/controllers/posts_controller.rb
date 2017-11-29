@@ -1,14 +1,32 @@
 class PostsController < ApplicationController
 
   def new
-    @post = Post.new
+    @user = current_user
+    @post = @user.posts.new
   end
+
+  # def new
+  #   binding.pry
+  #   @user =
+  #   @review = @post.reviews.new
+  # end
+  #
+  # def create
+  #   @post = Product.find(params[:post_id])
+  #   @review = @post.reviews.new(review_params)
+  #   if @review.save
+  #     flash[:notice] = "Review successfully added!"
+  #     redirect_to post_path(@review.post)
+  #   else
+  #     render :new
+  #   end
+  # end
 
   def create
     @post = Post.new(post_params)
     if @post.save
       flash[:notice] = "Post successfully added!"
-      redirect_to posts_path
+      redirect_to root_path
     else
       render :new
     end
@@ -37,7 +55,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     flash[:notice] = "Post successfully deleted!"
-    redirect_to posts_path
+    redirect_to root_path
   end
 
   def upvote

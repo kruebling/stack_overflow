@@ -1,14 +1,16 @@
 <h1>Welcome</h1>
 <h3>Newest posts</h3>
-<div class="row">
-  <% @posts.each do |post| %>
-  <div class="col sm-4">
-    <div class="card">
-      <div class="card-block">
+<% @posts.each do |post| %>
+  <div class="row">
+    <div class="col sm-4">
+      <div class="card">
+        <div class="card-block">
         <%= post.title %>
         <%= link_to post.title, post_path(post) %>
+        </div>
       </div>
     </div>
-  </div>
-  <% end %>
-</div>
+  </div><br>
+<% end %>
+
+<p><%= link_to "Add A Question", new_post_path %></p>
